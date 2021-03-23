@@ -1,0 +1,541 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset CSS
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Main styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation bar */
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	background: url('../images/Background.png');
+	background-attachment: fixed;
+	background-position: auto, center top;
+	padding: 2rem 0;
+	color: white;
+
+	.logo {
+		font-weight: bold;
+		font-size: 1.35rem;
+		letter-spacing: 5px;
+
+		a {
+			color: #d6d6d6;
+		}
+
+		span {
+			color: #d63535;
+		}
+	}
+
+	li {
+		display: flex;
+		flex-direction: row;
+		width: 40%;
+		justify-content: space-between;
+
+
+		a {
+			font-weight: 400;
+			font-size: 0.9rem;
+			letter-spacing: 2px;
+			color: white;
+
+		}
+	}
+
+
+}
+
+/* Hero Section */
+
+.hero {
+	background: url('../images/Background.png');
+	background-position: 0 -5.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	.left-column {
+		margin-top: 6rem;
+		margin-left: 11.3%;
+		margin-right: auto;
+
+		.heading {
+			font-size: 4.53rem;
+			font-weight: 800;
+			line-height: normal;
+			color: white;
+			margin-bottom: 1.53rem;
+
+		}
+
+		.line {
+			width: 3.8rem;
+			height: 7px;
+			background-color: white;
+			margin-left: 10%;
+			margin-bottom: 1.53rem;
+		}
+
+		.desc {
+			width: 120%;
+			font-style: italic;
+			font-weight: 400;
+			color: white;
+			line-height: 140%;
+			// letter-spacing: 0.2pt;
+			margin-bottom: 2rem;
+		}
+
+		.readmore-btn-cta {
+			padding: 1em 1.9em;
+			display: inline-block;
+			background-color: #d22222;
+			cursor: pointer;
+			text-decoration: none;
+
+			a {
+				font-weight: 700;
+				color: #ffffff;
+			}
+		}
+
+		.readmore-btn-cta:hover {
+			background-color: #aa041a;
+		}
+
+		.readmore-btn-cta:active {
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	.right-column {
+		margin-right: 8%;
+		margin-top: 2rem;
+
+	}
+}
+
+
+/* About Us Section */
+
+.about-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.heading2 {
+		font-size: 4.53rem;
+		font-weight: 800;
+		line-height: normal;
+		margin-bottom: 1.53rem;
+		margin-top: 10rem;
+		letter-spacing: 3.5pt;
+
+	}
+
+	.redline {
+		width: 12rem;
+		height: 9px;
+		background-color: #d22222;
+		margin: 0 auto 1.53rem;
+
+	}
+
+	p {
+		font-weight: 400;
+		text-align: center;
+		font-size: 1.35rem;
+	}
+
+	.about-us-btn-cta {
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+		padding: 1em 1.9em;
+		display: inline-block;
+		background-color: #d22222;
+		cursor: pointer;
+		text-decoration: none;
+		box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+
+		a {
+			font-weight: 700;
+			color: #ffffff;
+		}
+	}
+
+	.about-us-btn-cta:hover {
+		background-color: #aa041a;
+	}
+
+	.about-us-btn-cta:active {
+		position: relative;
+		top: 2px;
+	}
+}
+
+/* Subscription Section */
+
+.subscription {
+	background-image: url('/images/Background-subs.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 6rem 0;
+
+	.left-column {
+		margin: auto auto;
+		margin-left: 11.3%;
+		margin-right: auto;
+
+
+		.heading {
+			font-size: 4.53rem;
+			font-weight: 800;
+			line-height: 90%;
+			color: white;
+			margin-bottom: 1.53rem;
+		}
+
+		.line {
+			width: 5rem;
+			height: 7px;
+			background-color: white;
+			margin-left: 10%;
+			margin-bottom: 1.53rem;
+		}
+
+		.subs-par {
+			width: 120%;
+			font-style: italic;
+			font-weight: 400;
+			color: white;
+			line-height: 140%;
+			// letter-spacing: 0.2pt;
+			margin-bottom: 2rem;
+		}
+
+		.subs-now-btn-cta {
+			padding: 1em 1.9em;
+			display: inline-block;
+			background-color: #d22222;
+			cursor: pointer;
+			text-decoration: none;
+
+			a {
+				font-weight: 700;
+				color: #ffffff;
+			}
+		}
+
+		.subs-now-btn-cta:hover {
+			background-color: #aa041a;
+		}
+
+		.subs-now-btn-cta:active {
+			position: relative;
+			top: 2px;
+		}
+
+
+	}
+
+	.right-column {
+		margin-right: 8%;
+		margin-top: 2rem;
+	}
+}
+
+
+/* Our Services Section */
+
+.our-services {
+
+	.heading2 {
+		font-size: 4.53rem;
+		font-weight: 800;
+		line-height: normal;
+		margin-bottom: 1.53rem;
+		margin-top: 7rem;
+		text-align: center;
+		letter-spacing: 3.5pt;
+	}
+
+	.top-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		// margin-bottom: 5%;
+		.heading2{
+			margin-top: 10rem;
+		}
+
+		.redline {
+			width: 10rem;
+			height: 9px;
+			background-color: #d22222;
+			margin: 0 auto 2rem;
+
+		}
+
+		p {
+			font-weight: 400;
+			text-align: center;
+			font-size: 1.35rem;
+		}
+
+		.our-services-btn-cta {
+			margin-top: 4rem;
+			margin-bottom: 6rem;
+			padding: 1em 1.9em;
+			display: inline-block;
+			background-color: #d22222;
+			cursor: pointer;
+			text-decoration: none;
+			box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+
+			a {
+				font-weight: 700;
+				color: #ffffff;
+			}
+		}
+
+		.our-services-btn-cta:hover {
+			background-color: #aa041a;
+		}
+
+		.our-services-btn-cta:active {
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	.bottom-column {
+		.client-logo {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			margin: 6rem 0;
+		}
+	}
+}
+
+/* Footer Section */
+
+.footer {
+	background-color: #0E0D0C;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:flex-start;
+	padding-bottom: 3rem;
+
+	a{
+		font-weight: 700;
+		text-decoration: none;
+		color: white;
+		letter-spacing: 1px;
+	}
+
+	.top{
+		margin: 5rem 0 3rem;
+
+	}
+
+	.left-column{
+		margin-left: 7rem;
+		
+		a:nth-child(2){
+			margin-left: 2rem;
+		}
+
+		.redline {
+			width: 7.5rem;
+			height: 7px;
+			background-color: #d22222;
+			margin-bottom: 3rem;
+		}
+
+		.address{
+			color: #B9B9B9;
+			line-height: 180%;
+		}
+	}
+
+	.right-column{
+		margin-right: 5rem;
+		.top{
+
+			a{
+				letter-spacing: normal;
+			}
+			a:nth-child(2){
+				margin-left: 2rem;
+			}
+		}
+
+		img{
+			position: relative;
+			right: -11rem;
+			bottom: -1rem;
+			height: 6rem;
+		}
+
+		
+	}
+}

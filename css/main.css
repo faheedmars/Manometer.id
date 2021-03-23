@@ -1,0 +1,564 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset CSS
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation bar */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: url("../images/Background.png");
+  background-attachment: fixed;
+  background-position: auto, center top;
+  padding: 2rem 0;
+  color: white;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.35rem;
+  letter-spacing: 5px;
+}
+
+nav .logo a {
+  color: #d6d6d6;
+}
+
+nav .logo span {
+  color: #d63535;
+}
+
+nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav li a {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../images/Background.png");
+  background-position: 0 -5.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .left-column {
+  margin-top: 6rem;
+  margin-left: 11.3%;
+  margin-right: auto;
+}
+
+.hero .left-column .heading {
+  font-size: 4.53rem;
+  font-weight: 800;
+  line-height: normal;
+  color: white;
+  margin-bottom: 1.53rem;
+}
+
+.hero .left-column .line {
+  width: 3.8rem;
+  height: 7px;
+  background-color: white;
+  margin-left: 10%;
+  margin-bottom: 1.53rem;
+}
+
+.hero .left-column .desc {
+  width: 120%;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+
+.hero .left-column .readmore-btn-cta {
+  padding: 1em 1.9em;
+  display: inline-block;
+  background-color: #d22222;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero .left-column .readmore-btn-cta a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero .left-column .readmore-btn-cta:hover {
+  background-color: #aa041a;
+}
+
+.hero .left-column .readmore-btn-cta:active {
+  position: relative;
+  top: 2px;
+}
+
+.hero .right-column {
+  margin-right: 8%;
+  margin-top: 2rem;
+}
+
+/* About Us Section */
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .heading2 {
+  font-size: 4.53rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1.53rem;
+  margin-top: 10rem;
+  letter-spacing: 3.5pt;
+}
+
+.about-us .redline {
+  width: 12rem;
+  height: 9px;
+  background-color: #d22222;
+  margin: 0 auto 1.53rem;
+}
+
+.about-us p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.about-us .about-us-btn-cta {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 1em 1.9em;
+  display: inline-block;
+  background-color: #d22222;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+          box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+}
+
+.about-us .about-us-btn-cta a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about-us .about-us-btn-cta:hover {
+  background-color: #aa041a;
+}
+
+.about-us .about-us-btn-cta:active {
+  position: relative;
+  top: 2px;
+}
+
+/* Subscription Section */
+.subscription {
+  background-image: url("../images/Background-subs.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 6rem 0;
+}
+
+.subscription .left-column {
+  margin: auto auto;
+  margin-left: 11.3%;
+  margin-right: auto;
+}
+
+.subscription .left-column .heading {
+  font-size: 4.53rem;
+  font-weight: 800;
+  line-height: 90%;
+  color: white;
+  margin-bottom: 1.53rem;
+}
+
+.subscription .left-column .line {
+  width: 5rem;
+  height: 7px;
+  background-color: white;
+  margin-left: 10%;
+  margin-bottom: 1.53rem;
+}
+
+.subscription .left-column .subs-par {
+  width: 120%;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+
+.subscription .left-column .subs-now-btn-cta {
+  padding: 1em 1.9em;
+  display: inline-block;
+  background-color: #d22222;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.subscription .left-column .subs-now-btn-cta a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.subscription .left-column .subs-now-btn-cta:hover {
+  background-color: #aa041a;
+}
+
+.subscription .left-column .subs-now-btn-cta:active {
+  position: relative;
+  top: 2px;
+}
+
+.subscription .right-column {
+  margin-right: 8%;
+  margin-top: 2rem;
+}
+
+/* Our Services Section */
+.our-services .heading2 {
+  font-size: 4.53rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1.53rem;
+  margin-top: 7rem;
+  text-align: center;
+  letter-spacing: 3.5pt;
+}
+
+.our-services .top-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-services .top-column .heading2 {
+  margin-top: 10rem;
+}
+
+.our-services .top-column .redline {
+  width: 10rem;
+  height: 9px;
+  background-color: #d22222;
+  margin: 0 auto 2rem;
+}
+
+.our-services .top-column p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.our-services .top-column .our-services-btn-cta {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 1em 1.9em;
+  display: inline-block;
+  background-color: #d22222;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+          box-shadow: 10px 10px 20px rgba(105, 105, 105, 0.3);
+}
+
+.our-services .top-column .our-services-btn-cta a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.our-services .top-column .our-services-btn-cta:hover {
+  background-color: #aa041a;
+}
+
+.our-services .top-column .our-services-btn-cta:active {
+  position: relative;
+  top: 2px;
+}
+
+.our-services .bottom-column .client-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 6rem 0;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0E0D0C;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 3rem;
+}
+
+.footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer .top {
+  margin: 5rem 0 3rem;
+}
+
+.footer .left-column {
+  margin-left: 7rem;
+}
+
+.footer .left-column a:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.footer .left-column .redline {
+  width: 7.5rem;
+  height: 7px;
+  background-color: #d22222;
+  margin-bottom: 3rem;
+}
+
+.footer .left-column .address {
+  color: #B9B9B9;
+  line-height: 180%;
+}
+
+.footer .right-column {
+  margin-right: 5rem;
+}
+
+.footer .right-column .top a {
+  letter-spacing: normal;
+}
+
+.footer .right-column .top a:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.footer .right-column img {
+  position: relative;
+  right: -11rem;
+  bottom: -1rem;
+  height: 6rem;
+}
+/*# sourceMappingURL=main.css.map */
